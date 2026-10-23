@@ -198,10 +198,6 @@ Python · pandas · NumPy · scikit-learn · imbalanced-learn · XGBoost · Matp
 
 Dataset: Worldline and the Machine Learning Group of ULB (Université Libre de Bruxelles), hosted on Kaggle.
 
-## License
-
-MIT
-
 ## Contact
 
 Puja Hansitha · [GitHub](https://github.com/puja-hansitha)
