@@ -66,8 +66,7 @@ Fraudulent transactions are rare (~0.17% of all transactions). This creates two 
 ### 3. Handling Class Imbalance
 | Strategy | Applied to |
 |---|---|
-| Baseline (no handling) | Logistic Regression |
-| `class_weight="balanced"` | Logistic Regression, Random Forest |
+| `class_weight="balanced"` | Logistic Regression (baseline), Random Forest |
 | SMOTE oversampling | Random Forest |
 | `scale_pos_weight` | XGBoost |
 

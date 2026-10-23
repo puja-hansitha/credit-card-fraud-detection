@@ -97,9 +97,9 @@ def evaluate_all():
     print(f"{'Model':<30} {'Thresh':>7} {'Prec':>7} {'Rec':>7} {'F1':>7} {'PR-AUC':>8} {'ROC-AUC':>9}")
     print("-" * 80)
     for r in results:
-        print(f"{r['Model']:<30} {r['Threshold']:>7} {r['Precision']:>7} {r['Recall']:>7} {r['F1']:>7} {r['PR-AUC']:>8} {r['ROC-AUC']:>9}")
+        print(f"{r['Model']:<30} {r['Threshold']:>7.3f} {r['Precision']:>7} {r['Recall']:>7} {r['F1']:>7} {r['PR-AUC']:>8} {r['ROC-AUC']:>9}")
 
-    print(f"\nBest model: {best['Model']} | Threshold: {best['Threshold']} | Recall: {best['Recall']} | Precision: {best['Precision']}")
+    print(f"\nBest model: {best['Model']} | Threshold: {best['Threshold']:.3f} | Recall: {best['Recall']} | Precision: {best['Precision']}")
     print("Figures saved to reports/figures/")
 
 if __name__ == "__main__":

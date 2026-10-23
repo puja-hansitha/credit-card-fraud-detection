@@ -2,6 +2,7 @@ data/creditcard.csv
 models/
 
 venv/
+.venv/
 __pycache__/
 *.pkl
 *.pyc
