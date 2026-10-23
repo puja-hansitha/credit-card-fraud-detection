@@ -2,8 +2,8 @@
 
 A machine learning project that detects fraudulent credit card transactions from a highly imbalanced dataset. Evaluated with precision, recall, and PR-AUC — not accuracy.
 
-> **Status:** In progress
-> **Author:** [Your Name] · [Your College] · B.Tech CSE (2029)
+> **Status:** Complete
+> **Author:** Puja Hansitha · B.Tech CSE (2029)
 
 ---
 
@@ -114,7 +114,7 @@ credit-card-fraud-detection/
 **Prerequisites:** Python 3.9+
 
 ```bash
-git clone https://github.com/<your-username>/credit-card-fraud-detection.git
+git clone https://github.com/puja-hansitha/credit-card-fraud-detection.git
 cd credit-card-fraud-detection
 
 python -m venv venv
@@ -144,16 +144,14 @@ python src/evaluate.py
 
 ## Results
 
-> Run `src/evaluate.py` to populate this table from your own test set.
-
 | Model | Strategy | Threshold | Precision | Recall | F1 | PR-AUC | ROC-AUC |
 |---|---|---|---|---|---|---|---|
-| Logistic Regression | Class weights | — | — | — | — | — | — |
-| Random Forest | Class weights | — | — | — | — | — | — |
-| Random Forest | SMOTE | — | — | — | — | — | — |
-| XGBoost | scale_pos_weight | — | — | — | — | — | — |
+| Logistic Regression | Class weights | 1.000 | 0.833 | 0.816 | 0.825 | 0.719 | 0.972 |
+| Random Forest | Class weights | 0.390 | 0.882 | 0.837 | 0.859 | 0.863 | 0.957 |
+| Random Forest | SMOTE | 0.770 | 0.962 | 0.776 | 0.859 | 0.875 | 0.973 |
+| XGBoost | scale_pos_weight | 0.977 | 0.952 | 0.816 | 0.879 | **0.877** | 0.972 |
 
-**Best model:** run evaluation to determine.
+**Best model:** XGBoost (`scale_pos_weight`) — highest PR-AUC (0.877), Precision 0.952, Recall 0.816, F1 0.879.
 
 ![Precision-Recall Curve](reports/figures/pr_curve.png)
 ![Confusion Matrix](reports/figures/confusion_matrix.png)
@@ -206,4 +204,4 @@ MIT
 
 ## Contact
 
-[Your Name] · [LinkedIn] · [Email]
+Puja Hansitha · [GitHub](https://github.com/puja-hansitha)
