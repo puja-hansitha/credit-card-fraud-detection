@@ -1,0 +1,8 @@
+data/creditcard.csv
+models/
+reports/figures/
+venv/
+__pycache__/
+*.pkl
+*.pyc
+.ipynb_checkpoints/
